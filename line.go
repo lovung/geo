@@ -15,7 +15,7 @@ type Line struct {
 // NewLine create the new line which through 2 points
 func NewLine(m, n Point) Line {
 	vector := n.Sub(m)
-	return Line{-vector.y, vector.x, (m.X * vector.y) - (m.Y * vector.x)}
+	return Line{-vector.y, vector.x, (m.x * vector.y) - (m.y * vector.x)}
 }
 
 func (l Line) String() string {

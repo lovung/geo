@@ -10,8 +10,8 @@ type DirectionalEdge struct {
 
 // Len is the distance from Start point to End point
 func (de *DirectionalEdge) Len() float64 {
-	dX := de.End.X - de.Start.X
-	dY := de.End.Y - de.Start.Y
+	dX := de.End.x - de.Start.x
+	dY := de.End.y - de.Start.y
 	return math.Sqrt(dX*dX + dY*dY)
 }
 
